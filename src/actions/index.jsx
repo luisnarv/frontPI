@@ -24,7 +24,7 @@ import axios from "axios";
 
 export function GetCountries() {
     return async function (dispatch) {
-            var res = await axios.get("http://localhost:3001/countries");
+            var res = await axios.get("https://restcountries.com/v3/all");
             return dispatch({
                 type: "GET_COUNTRIES",
                 payload:  res.data
