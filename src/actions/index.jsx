@@ -24,20 +24,11 @@ import axios from "axios";
 
 export function GetCountries() {
     return async function (dispatch) {
-            var res = await axios.get("https://restcountries.com/v3/all");
+            var res = await axios.get("http://localhost:3001/countries");
             return dispatch({
                 type: "GET_COUNTRIES",
-                payload:  res.data,
-                data: {
-                    id: e.cca3,
-                    name: e.name.common,
-                    image: e.flags[0],
-                    continent: e.continents[0],
-                    capital: e.capital ? e.capital[0] : 'Not found',
-                    subregion: e.subregion,
-                    area: e.area,
-                    population: e.population
-                 }
+                payload:  res.data
+                 
             })
         }
     }
