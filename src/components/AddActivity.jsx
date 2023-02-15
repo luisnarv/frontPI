@@ -148,8 +148,8 @@ function handleDetail(e){
 <img className={`img3 && ${style.img3}`} src={img3} alt="img3" />
 <img className={`img4 && ${style.img4}`} src={img4} alt="img4" />
 
-                <Link  to = "/Home"><button className={`radius && ${style.radius}`}>❌</button></Link> 
-                    <h2 className={style.text}>Add Activity</h2>
+                <Link  to = "/Home"><button className={`radius && ${style.radius}`}>x</button></Link> 
+                    <h2 className={`text && ${style.text}`}>Add Activity</h2>
                     <div>
                         <form className={`container && ${style.container}`} onSubmit={handleSubmit}>
                                 <label>Activity: </label> 

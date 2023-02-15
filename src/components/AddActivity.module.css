@@ -1,9 +1,10 @@
 .form1{
-background-color: aqua;
+background-color: rgba(21, 141, 210, 0.94)  white;
 position: absolute;
 width: 100%;
 height: 100%;
-bottom: 0px;
+background: linear-gradient(blue, rgba(227, 233, 45, 0.582));
+
 }
 
 
@@ -13,6 +14,7 @@ bottom: 0px;
     flex-direction: column;
     margin: 5% 50% 5% 5%;
     font-family:Copperplate Gothic Light;
+    font-size: 20px;
     background-image: url(../IMG/5.jpg);
      width: 80%;
     height: 80%; 
@@ -26,8 +28,8 @@ bottom: 0px;
     background: rgba(0, 128, 0, 0.541);
     border-radius: 5%;
          width: 60%;
-        bottom: 50px;
-        height: 50%; 
+        bottom: 30px;
+        height: 60%; 
         left: 30px;
     display: flex;
     flex-direction: column;
@@ -63,9 +65,9 @@ bottom: 0px;
     position: relative;
     left: 150px;
     height: 25px;
-    top: -400px;
+    top: -500px;
    border: 0px solid;
-   background-color: rgba(237, 8, 8, 0.339);
+   background-color: rgba(237, 8, 8, 0.656);
     cursor: pointer;
 }
 .lista{

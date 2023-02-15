@@ -97,7 +97,7 @@ function handlePopulations(e) {
                      <button className={`button && ${style.button}`}>Crear actividad</button> 
                      </Link>
                          <input className={ `search && ${style.search}`}type='text'  placeholder="Search country ...          🔍" onChange={(e)=> handleSearch(e)}/>
-
+                          <button> buscar</button>
                                <button className={`button5 && ${style.button5}`} onClick={e=>{handleClick(e)}}>Clean filters 🧹</button>
 
                    <div>

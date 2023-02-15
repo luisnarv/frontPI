@@ -1,0 +1,30 @@
+.lista{
+ 
+    display: inline-block;
+    position: relative;
+   
+    cursor: pointer;
+}
+
+.number{
+    display: inline;
+color: antiquewhite;
+}
+.pagin{
+     -moz-border-bottom-colors: none;
+
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none; 
+    border-color:  #ddd2d2;
+    border-style: inset;
+    border-width: 1px 1px 1px 1;
+    float: left;
+    background-color: rgb(0, 0, 0);
+    line-height: 25px;
+    padding:  1px 20px 5px 20px;
+    text-decoration: none;
+    
+}
+
+

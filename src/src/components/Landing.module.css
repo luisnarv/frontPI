@@ -1,0 +1,201 @@
+.container{
+ width: 1000px;
+ position: absolute;
+
+}
+.container2{
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+}
+
+.img{
+  border: none;
+  width: auto ; 
+  position:absolute;
+  /* margin: 50px 50px  50px 100px; */
+  width: 1597px;
+  height: 795px;
+  left: 0px;
+  right: 0px;
+}
+.img2{
+  position:absolute;
+  /* bottom: 200px; */
+width: 100%; 
+top: 222px;
+left: 100px;
+  animation-duration: 5s;
+  animation-name: plane;
+  animation-direction:initial;
+  animation-iteration-count:1;
+ /* animation-timing-function: cubic-bezier(10.2,5,5.8,2); */
+ /* animation-timing-function:cubic-bezier(0.2,-5,5.0,5); */
+ animation-timing-function: linear;
+  cursor: url("../IMG/9.1.png"), auto;  
+}
+
+
+@keyframes plane {
+
+  from {
+  width: 0%;
+  top :200px;
+   
+  }
+
+  15% { 
+    top: 300px;
+    /* animation-timing-function:cubic-bezier(10.175, 5.885, 2.32, 9.275); */
+  }
+   35% {
+    top: 280px;
+  
+  }  
+   55% {
+    
+    top: 270px;
+   
+  } 
+  100% {
+   width: 100%;
+    top: 220px;
+     animation-timing-function: linear; 
+    
+  }
+   
+  to {
+
+  
+  }
+
+
+}
+
+
+
+
+
+
+
+.img4{
+  width: 600px;
+  height: 150px;
+  left: -300px;
+  top:100px;
+  position: relative;
+/*   
+  border:5px solid rgba(1, 1, 22, 0.945); 
+   box-shadow: 50px 35px 50px  #0a0a0a; */
+}
+
+.img3{
+  width: 400px;
+  left: 750px;
+  top:200px;
+  position: relative;
+  border-radius: 10px 0px 50px 50px;
+  border:5px solid rgba(1, 1, 22, 0.945);
+  box-shadow: 50px 35px 50px  #0a0a0a;
+}
+
+
+
+.button{
+
+    position: relative;
+    top: 50px; 
+    left: 150px;
+    margin: auto;
+    box-shadow: 10px 10px 10px #0a0a0a;
+    cursor: url(../IMG/2.9.1.png), auto;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
+} 
+
+
+
+.u {
+  animation-duration: 3s;
+  animation-name: slidein;
+  bottom: 500px ;
+  position: relative;
+
+}
+
+
+
+.text2{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  left: 900px;
+  top: 170px;
+  width: 600px;
+  border-radius: 5px;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: Consolas;
+  justify-content: space-evenly;
+  font-size: small;
+}
+
+
+.text3 {
+  animation-duration: 3s;
+  animation-name: pd;
+ 
+  animation-direction: alternate;
+  animation-iteration-count:1;
+  animation-fill-mode:both;
+}
+
+@keyframes pd {
+  from {
+    margin-left: -100%;
+    width: 20%
+  }
+
+  to {
+    margin-right: -222%;
+    width: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

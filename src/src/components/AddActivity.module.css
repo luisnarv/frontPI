@@ -1,0 +1,118 @@
+.form1{
+background-color: rgba(21, 141, 210, 0.94)  white;
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(blue, rgba(227, 233, 45, 0.582));
+
+}
+
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 50% 5% 5%;
+    font-family:Copperplate Gothic Light;
+    font-size: 20px;
+    background-image: url(../IMG/5.jpg);
+     width: 80%;
+    height: 80%; 
+    border-radius: 50px;
+
+}
+
+.container{
+    position: absolute;
+    padding: 2%;
+    background: rgba(0, 128, 0, 0.541);
+    border-radius: 5%;
+         width: 60%;
+        bottom: 30px;
+        height: 60%; 
+        left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0% 10% 0% 0%;
+   
+}
+
+.select{
+    background-color: rgb(202, 222, 202);
+    border-radius: 5px;
+    border: 2px solid;
+    position: relative;
+    left: 150px;
+    top: -18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.select2{
+
+    right: 50px;
+}
+.button{
+    position: relative;
+    left: 300px;
+    background-color: aqua;
+    border: 1px solid;
+    cursor: pointer;
+   
+}
+
+.radius{
+    position: relative;
+    left: 150px;
+    height: 25px;
+    top: -500px;
+   border: 0px solid;
+   background-color: rgba(237, 8, 8, 0.656);
+    cursor: pointer;
+}
+.lista{
+    display: flex;
+    
+}
+
+
+
+.text{
+    position: relative;
+    top: -450px;
+    color: aliceblue;
+}
+.img1{
+    left: 1000px;
+    position: relative;
+    top: 30px;
+    width: 15%;
+    border: 5px solid;
+    border-radius: 5%;
+}
+.img2{
+    left: 1000px;
+    position: relative;
+    top: 40px;
+    width: 15%;
+    border: 5px solid;
+    border-radius: 5%;
+  
+}
+.img3{
+    left: 1000px;
+    position: relative;
+    top:  60px;
+    width: 15%;
+    border-radius: 5%;
+    border: 5px solid;
+}
+.img4{
+
+    left: 1000px;
+    position: relative;
+    top:  70px;
+    width: 15%;
+    border: 5px solid;
+    border-radius: 5%;
+}

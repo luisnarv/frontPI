@@ -1,0 +1,140 @@
+.container{
+    width: auto;
+    height: 1400px default;
+    position: relative;
+    background-image: url("../IMG/9.6.jpg");
+    padding: 40px;
+    
+}
+
+.nav{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+
+
+.home{
+    position:relative;
+    width: 100px;
+   /* top: 130px;*/
+  right: 600px;  
+  animation-name: salto;
+  animation-duration: 5s;
+  animation-direction:initial;
+  animation-iteration-count:infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes salto {
+    from {
+        top: 2px;
+        animation-timing-function: ease-out;
+      }
+    
+      25% {
+        top: -100px;
+        animation-timing-function: ease-in;
+      }
+    
+      50% {
+        top: 2px;
+        animation-timing-function: ease-out;
+      }
+    
+      75% {top: -100px;
+       
+        animation-timing-function: ease-in;
+      }
+    
+      to {
+        top: 2px;
+      }
+    
+    
+}
+
+.card{
+     height: auto;
+    height: 700px;
+  /* overflow: hidden;
+    overflow: scroll; */
+   
+    background-color: rgba(150, 152, 198, 0.583);
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    margin: 5px 10px 0px 10px ;
+    border-radius: 50px;
+     /* background-image: url("../IMG/1.jpg"); */
+background-color: rgba(55, 85, 111, 0.351);
+
+} 
+
+.txt{
+    top: 10px;
+    position: relative;
+}
+
+
+.button{
+
+    
+    right: 150px;
+    cursor: pointer;
+    position: relative;
+background-color: rgb(232, 254, 62);
+    border: 3px solid;
+    border-radius: 10px 1px 10px 0px;
+}
+
+.button2{
+  position: relative;
+    right: 450px;
+    background-color: rgb(162, 212, 96);
+    border: 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button3{
+  position: relative;
+    right: 100px;
+    background-color: rgb(162, 212, 96);
+    border: 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button4{
+  position: relative;
+    right: 130px;
+    background-color: rgb(162, 212, 96);
+    border: 3px solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.button5{
+  position: relative;
+    right: 200px;
+    background-color: rgb(162, 212, 96);
+    border: 3px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.search{
+    position: relative;
+    right: 1000px;
+    border: 3px solid;
+    background-color: rgb(122, 206, 77);
+}

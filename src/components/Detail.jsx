@@ -33,16 +33,16 @@ const activities = detail.activities?.map(e => {
 let contador = 1
  
 
-return(
-<div className={`container && ${style.container}`}>
+return (
 <div className={`container2 && ${style.container2}`}>
-<div ><Link  to = "/Home"><img className={`button && ${style.button}`}src={img1}></img></Link> </div>
+
+<Link  to = "/Home"><img className={`button && ${style.button}`}src={img1}></img></Link>
  
  
 <Link  to = "/Activity"> <h3 className={`button2 && ${style.button2}`}>Created activity</h3></Link>
 
 
-<div>
+
     {
         !countrys.length > 0 ? //no es verdadero que la longitud de countrys sea mayor que 0
 
@@ -50,8 +50,8 @@ return(
         //               |
         //               V
         <div className={`countri && ${style.countri}`}>  
-                 <h1>{countrys.name}</h1>
- <div> <img className={`img && ${style.img}`} src={countrys.image}/></div> 
+                <h1>{countrys.name}</h1>
+  <img className={`img && ${style.img}`} src={countrys.image}/> 
               
               <p>Code: {countrys.id}</p>
                <p>Continent: {countrys.continent}</p>
@@ -64,14 +64,15 @@ return(
              :  <p>LOADING....</p>
              }
               
-</div>
 
-<div className={`fon && ${style.fon}`}>
+
 {activities?.length > 0 ? activities?.map(e => {
                                         return ( 
-                                        <div>
+                                        
                                             
                                             <div className={`activity && ${style.activity}`} key={e.id}>
+                                                 <br />
+                                                <br />
                                                 <h1>ACTIVITIES {contador ++}</h1>
                                                 <p>Name: {e.name}</p>
                                                 <p>Difficulty: {e.difficulty}</p>
@@ -79,16 +80,17 @@ return(
                                                 <p>Season: {e.season}</p>
                                                 <p>Time: {e.time}</p>
                                                 <p>Details: {e.details}</p>
-                                                <hr></hr>
+                                                <br />
+                                                <br />
                                             </div>
-                                            </div>
+                                        
                                         )
                                     })
                                         : <p className={`activity && ${style.activity}`}>LOADING....</p>}
 
+
 </div>
-</div>
-</div>
+                                
 
 )
 
