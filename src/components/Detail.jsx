@@ -5,6 +5,7 @@ import { GetDetail } from "../actions";
 import { useEffect } from "react";
 import style from "./Detail.module.css";
 import img1 from "../IMG/3.2.1.png";
+import "./Detail.css";
 
 export default function Detail(props) {
 const dispatch = useDispatch()
@@ -33,12 +34,12 @@ let contador = 1
  
 
 return(
-<div className={style.container}>
-<div className={style.container2}>
-<div ><Link  to = "/Home"><img className={style.button}src={img1}></img></Link> </div>
+<div className={`container && ${style.container}`}>
+<div className={`container2 && ${style.container2}`}>
+<div ><Link  to = "/Home"><img className={`button && ${style.button}`}src={img1}></img></Link> </div>
  
  
-<div ><Link  to = "/Activity"> <h3 className={style.button2}>Created activity</h3></Link> </div>
+<Link  to = "/Activity"> <h3 className={`button2 && ${style.button2}`}>Created activity</h3></Link>
 
 
 <div>
@@ -48,9 +49,9 @@ return(
         //Si el resultado es falso, se ejecutará 
         //               |
         //               V
-        <div className={style.countri}>  
+        <div className={`countri && ${style.countri}`}>  
                  <h1>{countrys.name}</h1>
- <div> <img className={style.img} src={countrys.image}/></div> 
+ <div> <img className={`img && ${style.img}`} src={countrys.image}/></div> 
               
               <p>Code: {countrys.id}</p>
                <p>Continent: {countrys.continent}</p>
@@ -65,12 +66,12 @@ return(
               
 </div>
 
-<div className={style.fon}>
+<div className={`fon && ${style.fon}`}>
 {activities?.length > 0 ? activities?.map(e => {
                                         return ( 
                                         <div>
                                             
-                                            <div className={style.activity} key={e.id}>
+                                            <div className={`activity && ${style.activity}`} key={e.id}>
                                                 <h1>ACTIVITIES {contador ++}</h1>
                                                 <p>Name: {e.name}</p>
                                                 <p>Difficulty: {e.difficulty}</p>
@@ -83,7 +84,7 @@ return(
                                             </div>
                                         )
                                     })
-                                        : <p className={style.activity}>LOADING....</p>}
+                                        : <p className={`activity && ${style.activity}`}>LOADING....</p>}
 
 </div>
 </div>

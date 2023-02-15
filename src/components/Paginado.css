@@ -1,0 +1,32 @@
+
+@media (max-width: 768px) {
+    
+    .lista{
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    .number{
+        display: inline;
+    color: rgb(17, 16, 16);
+    }
+
+    
+    .pagin{
+         
+        border-color:  #131212;
+      
+        border-width: 1px 1px 1px 1px;
+        float: left;
+        background-color: rgb(211, 187, 187);
+        line-height: 10px;
+        padding: auto;
+        margin: auto;
+        text-decoration: none;
+        
+    }
+
+
+} 

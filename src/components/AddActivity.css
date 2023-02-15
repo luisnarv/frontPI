@@ -1,0 +1,68 @@
+
+@media (max-width: 768px) {
+.form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family:Copperplate Gothic Light;
+    background-image: url(../IMG/5.1.jpg);
+     width: 100%;
+    height: 100%; 
+   
+
+}
+
+.container{
+    position: relative;
+ 
+    background: rgba(0, 128, 0, 0.541);
+    border-radius: 3%;
+         width:80%;
+        height: 100%; 
+        left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+   
+}
+
+.select{
+    background-color: rgb(202, 222, 202);
+    border-radius: 5px;
+    border: 2px solid;
+    position: relative;
+    max-width: 130px;
+    left: 150px;
+    top: -18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.select2{
+
+    right: 50px;
+}
+.button{
+    position: relative;
+    top: -0px;
+    left: -00px;
+    background-color: aqua;
+    border: 1px solid;
+    cursor: pointer;
+   
+}
+
+.radius{
+    position: relative;
+    left: -70px;
+    top: 50px;
+    
+   border: 0px solid;
+   background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+}
+.lista{
+    display: flex;
+    
+}
+}

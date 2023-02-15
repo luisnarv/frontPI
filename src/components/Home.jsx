@@ -6,7 +6,8 @@ import Card from "./Card";
 import { Link } from "react-router-dom";
 import Paginado from "./Paginado";
 import style from "./Home.module.css";
-import img from "../IMG/2.4.png";
+import img from "../IMG/9.4.png";
+import "./Home.css"
 
 
 
@@ -14,6 +15,9 @@ import img from "../IMG/2.4.png";
 
 export default function Home(){
 
+
+
+    
     const [order, setOrder] = useState('');
     const dispatch = useDispatch()
     const allCountries = useSelector((state) => state.countries)
@@ -88,16 +92,16 @@ function handlePopulations(e) {
             
             <h1 className={style.txt}>Api Countries</h1> 
      <div>
-          <div className={style.nav}>
+          <div className={`nav && ${style.nav} `}>
                 <Link to= "/Activity">
-                     <button className={style.button}>Crear actividad</button> 
+                     <button className={`button && ${style.button}`}>Crear actividad</button> 
                      </Link>
-                         <input className={style.search}type='text'  placeholder="Search country ...          🔍" onChange={(e)=> handleSearch(e)}/>
+                         <input className={ `search && ${style.search}`}type='text'  placeholder="Search country ...          🔍" onChange={(e)=> handleSearch(e)}/>
 
-                               <button className={style.button5} onClick={e=>{handleClick(e)}}>Clean filters 🧹</button>
+                               <button className={`button5 && ${style.button5}`} onClick={e=>{handleClick(e)}}>Clean filters 🧹</button>
 
                    <div>
-                       <select className={style.button2} onChange={e=> handleContinents(e)}>
+                       <select className={`button2 && ${style.button2}`} onChange={e=> handleContinents(e)}>
                         <option value='All' key='All'>All continents</option>
                         <option value='Africa' key='Africa'>Africa</option>
                         <option value='Antarctica' key='Antarctica'>Antarctica</option>
@@ -111,7 +115,7 @@ function handlePopulations(e) {
 
       
                      <div>
-                       <select className={style.button3} onChange={e=> handlePopulations(e)}>
+                       <select className={`button3 && ${style.button3}`} onChange={e=> handlePopulations(e)}>
                         <option value='Max' key='Max'>Max population</option>
                         <option value='Min' key='Min'>Min population</option>
                        </select>
@@ -119,7 +123,7 @@ function handlePopulations(e) {
 
                  
                  <div>
-                    <select  className={style.button4} onChange={handleAZ}>
+                    <select  className={`button4 && ${style.button4}`} onChange={handleAZ}>
                         <option value='AZ' key='AZ'>A-Z</option>
                         <option value='ZA' key='ZA'>Z-A</option>
                     </select>
@@ -127,8 +131,10 @@ function handlePopulations(e) {
     
        
        </div>
-<img className={style.home} src={img} alt="" />
-       <div >
+
+       <Link to={"/"}>
+<img className={`home && ${style.home}`} src={img} alt="" />
+     </Link>  <div >
     {/* paginado con estados */}
      
        <Paginado
@@ -137,7 +143,7 @@ allCountries = {allCountries.length}
 paginado = {paginado}
 /> 
      </div>
-                      <div className={style.card}>
+                      <div className={`card && ${style.card}`}>
                 {
 
 

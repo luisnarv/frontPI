@@ -16,9 +16,9 @@
 
      border-style:  inset;
      border-right-style: inset;
-     box-shadow: 10px 10px 10px #2e08966f;
-
-     cursor: url(../IMG/2.2.png), auto;
+     box-shadow: 10px 10px 10px;
+border-radius: 25px ;
+     cursor: url(../IMG/9.2.png), auto;
 }
 .img{
     position: relative;

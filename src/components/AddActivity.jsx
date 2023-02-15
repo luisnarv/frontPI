@@ -4,8 +4,11 @@ import { useHistory } from 'react-router-dom';
 import { GetActivity, GetCountries, PostACtivity } from '../actions/index';
 import style from "./AddActivity.module.css";
 import { Link } from 'react-router-dom';
-
-
+import "./AddActivity.css";
+import img1 from "../IMG/sum.jpg"
+import img2 from "../IMG/autum.jpg"
+import img3 from "../IMG/winter.jpg"
+import img4 from "../IMG/spring.jpg"
 
 
 function valida(input) {
@@ -136,24 +139,29 @@ function handleDetail(e){
     const time =["A.M.", "P.M."];
 
     return (
-        <div className={style.form}>
-            <div >
-                <div ><Link  to = "/Home"><button className={style.radius}>❌</button></Link> </div>
+        <div className={`form1 && ${style.form1}`}>
+        <div className={`form && ${style.form}`}>
 
-                <div>
-                    <h2>Add Activity</h2>
+ 
+<img className={`img1 && ${style.img1}`} src={img1} alt="img1" />
+<img className={`img2 && ${style.img2}`} src={img2} alt="img2" />
+<img className={`img3 && ${style.img3}`} src={img3} alt="img3" />
+<img className={`img4 && ${style.img4}`} src={img4} alt="img4" />
+
+                <Link  to = "/Home"><button className={`radius && ${style.radius}`}>❌</button></Link> 
+                    <h2 className={style.text}>Add Activity</h2>
                     <div>
-                        <form className={style.container} onSubmit={handleSubmit}>
+                        <form className={`container && ${style.container}`} onSubmit={handleSubmit}>
                                 <label>Activity: </label> 
-                                <input className={style.select} type="text" value={input.name} name="name" onChange={handleChange} placeholder="Activity name..." required />
+                                <input className={`select && ${style.select}`}type="text" value={input.name} name="name" onChange={handleChange} placeholder="Activity name..." required />
                                 {errors.name && (
                                     <p /*className={style.error}*/>
                                         {/* {errors.name} */}
                                         </p>
                                 )}
                         
-                                <label className={style.select2} >Season: </label>
-                                <select className={style.select} onChange={handleSeason} required>
+                                <label className={`select2 && ${style.select2}`} >Season: </label>
+                                <select className={`select && ${style.select}`} onChange={handleSeason} required>
                                     <option value="" hidden>Select season</option>
                                     {season.map(e => (
                                         <option value={e} name="season" key={e} >{e}</option>
@@ -162,7 +170,7 @@ function handleDetail(e){
                             
                             
                                 <label>Difficulty: </label>
-                                <select  className={style.select}  onChange={handleSelctDifficulty} required >
+                                <select  className={`select && ${style.select}`}  onChange={handleSelctDifficulty} required >
                                     <option value="" hidden>Choose an option</option>
                                     {difficulty.map(e => (
                                         <option value={e} name="difficulty">{e}</option>
@@ -170,7 +178,7 @@ function handleDetail(e){
                                 </select>
             
                                 <label>Duration: </label>
-                                <select className={style.select}  onChange={handleSelectDuration} required>
+                                <select className={`select && ${style.select}`}  onChange={handleSelectDuration} required>
                                     <option value="" hidden>Choose an option</option>
                                     {duration.map(e => (
                                         <option value={e} name="duration">{e}</option>
@@ -178,7 +186,7 @@ function handleDetail(e){
                                 </select>
 
                                 <label>Time: </label>
-                                <select className={style.select}  onChange={handleSelectTime} required>
+                                <select className={`select && ${style.select}`}  onChange={handleSelectTime} required>
                                     <option value="" hidden>Choose an option</option>
                                     {time.map(e => (
                                         <option value={e} name="time">{e}</option>
@@ -187,7 +195,7 @@ function handleDetail(e){
                           
                            
                                 <label>Country: </label>
-                                <select className={style.select} onChange={handleSelect} required>
+                                <select className={`select && ${style.select}`} onChange={handleSelect} required>
                                     <option value="" hidden>Select country</option>
                                     {countries.map(e => (
                                         <option value={e.id} name="countries" key={e.id} >{e.name}</option>
@@ -196,22 +204,23 @@ function handleDetail(e){
                          
                             <div>
                                 <ul>
-                                    <li>{input.countries.map(i =>
+                                    <li className={`lista && ${style.lista}`}>{input.countries.map(i =>
                                         <div>
                                             {i}
-                                            <button onClick={() => handleDelete(i)} type="button">X</button>
+                                            <button onClick={() => handleDelete(i)} type="button">❌</button>
                                         </div>)}</li>
                                 </ul>
                             </div>
 
                             <label>Details: </label> 
-<textarea  className={style.select} type="text" value={input.details} name="details" onChange={handleDetail} placeholder="Detail activity..."></textarea>
+<textarea  className={`select && ${style.select}`} type="text" value={input.details} name="details" onChange={handleDetail} placeholder="Detail activity..."></textarea>
 
-                            <button className={style.button} type="submit">Add Activity</button>
+                            <button className={`button && ${style.button}`} type="submit">Add Activity</button>
                         </form>
                     </div>
-                </div>
-            </div>
+                
+            
+        </div>
         </div>
     )
 }

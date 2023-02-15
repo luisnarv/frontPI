@@ -28,7 +28,6 @@ export function GetCountries() {
             return dispatch({
                 type: "GET_COUNTRIES",
                 payload:  res.data
-                 
             })
         }
     }
